@@ -1,4 +1,4 @@
-package com.example.examplefeature;
+package cz.bh69.myfinances.examplefeature;
 
 import org.jspecify.annotations.Nullable;
 import org.springframework.data.domain.Pageable;

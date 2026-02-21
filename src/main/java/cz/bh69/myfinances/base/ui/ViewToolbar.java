@@ -1,4 +1,4 @@
-package com.example.base.ui;
+package cz.bh69.myfinances.base.ui;
 
 import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.Composite;
@@ -11,7 +11,9 @@ import org.jspecify.annotations.Nullable;
 
 public final class ViewToolbar extends Composite<HorizontalLayout> {
 
-    public ViewToolbar(@Nullable String viewTitle, Component... components) {
+    private static final long serialVersionUID = 1L;
+
+	public ViewToolbar(@Nullable String viewTitle, Component... components) {
         var layout = getContent();
         layout.setPadding(true);
         layout.setWrap(true);

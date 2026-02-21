@@ -6,6 +6,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.transaction.annotation.Transactional;
 
+import cz.bh69.myfinances.examplefeature.Task;
+import cz.bh69.myfinances.examplefeature.TaskService;
+
 import java.time.Instant;
 import java.time.LocalDate;
 

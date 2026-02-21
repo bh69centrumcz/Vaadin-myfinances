@@ -1,4 +1,4 @@
-package com.example.base.ui;
+package cz.bh69.myfinances.base.ui;
 
 import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.applayout.AppLayout;
@@ -19,7 +19,9 @@ import com.vaadin.flow.theme.lumo.LumoUtility;
 @Layout
 public final class MainLayout extends AppLayout {
 
-    MainLayout() {
+    private static final long serialVersionUID = 1L;
+
+	MainLayout() {
         setPrimarySection(Section.DRAWER);
         addToDrawer(createHeader(), new Scroller(createSideNav()));
     }

@@ -1,8 +1,5 @@
-package com.example.examplefeature.ui;
+package cz.bh69.myfinances.examplefeature.ui;
 
-import com.example.base.ui.ViewToolbar;
-import com.example.examplefeature.Task;
-import com.example.examplefeature.TaskService;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.button.ButtonVariant;
 import com.vaadin.flow.component.datepicker.DatePicker;
@@ -17,6 +14,10 @@ import com.vaadin.flow.router.Menu;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
 
+import cz.bh69.myfinances.base.ui.ViewToolbar;
+import cz.bh69.myfinances.examplefeature.Task;
+import cz.bh69.myfinances.examplefeature.TaskService;
+
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 import java.time.format.FormatStyle;
@@ -29,7 +30,9 @@ import static com.vaadin.flow.spring.data.VaadinSpringDataHelpers.toSpringPageRe
 @Menu(order = 0, icon = "vaadin:clipboard-check", title = "Task List")
 class TaskListView extends VerticalLayout {
 
-    private final TaskService taskService;
+    private static final long serialVersionUID = 1L;
+
+	private final TaskService taskService;
 
     final TextField description;
     final DatePicker dueDate;
