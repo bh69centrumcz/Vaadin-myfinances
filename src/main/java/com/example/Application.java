@@ -13,7 +13,9 @@ import com.vaadin.flow.component.page.AppShellConfigurator;
 @StyleSheet("styles.css") // Your custom styles
 public class Application implements AppShellConfigurator {
 
-    public static void main(String[] args) {
+    private static final long serialVersionUID = 1L;
+
+	public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
     }
 
